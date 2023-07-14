@@ -5,7 +5,6 @@ const routes = [
     path: '/',
     name: '/',
     component: () => import('@/App.vue'),
-   
   },
 ]
 

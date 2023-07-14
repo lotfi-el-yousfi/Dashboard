@@ -9,8 +9,6 @@
           <v-list-item-title>Home</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-       
-      
     </v-list>
   </v-navigation-drawer>
 </template>
@@ -21,6 +19,12 @@ export default {
   data() {
     return {
       drawer: true,
+      drawer_items: [
+        {
+          title: "",
+          icon: "",
+        },
+      ],
     };
   },
 };
