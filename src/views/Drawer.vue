@@ -1,31 +1,86 @@
 <template>
-  <v-navigation-drawer app v-model="drawer" permanent>
-    <v-list>
-      <v-list-item>
-        <v-list-item-icon>
-          <v-icon>mdi-home</v-icon>
-        </v-list-item-icon>
-        <v-list-item-content>
-          <v-list-item-title>Home</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
+  <v-navigation-drawer class="bg-deep-purple" theme="dark" permanent>
+    <v-list color="transparent">
+      <v-list-item
+        prepend-icon="mdi-view-dashboard"
+        title="Dashboard"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-account-box"
+        title="Account"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
+      <v-list-item
+        @click="handelclick"
+        prepend-icon="mdi-gavel"
+        title="Admin"
+      ></v-list-item>
     </v-list>
+
+    <template v-slot:append>
+      <div class="pa-2">
+        <v-btn block> Logout </v-btn>
+      </div>
+    </template>
   </v-navigation-drawer>
 </template>
 
 <script>
 export default {
-  name: "Drawer",
-  data() {
-    return {
-      drawer: true,
-      drawer_items: [
-        {
-          title: "",
-          icon: "",
-        },
-      ],
-    };
+  methods: {
+    handelclick() {
+      console.log("clicked");
+    },
   },
 };
 </script>

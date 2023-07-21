@@ -2,6 +2,10 @@
   "name": "Dashboard",
   "version": "0.0.0",
   "scripts": {
+    "test:unit": "jest test:unit",
+    "test:unit:coverage": "npm run test:unit -- --coverage",
+    "test": "jest",
+    "vitest": "vitest --globals",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
@@ -11,6 +15,7 @@
     "@mdi/font": "7.0.96",
     "pinia": "^2.0.23",
     "roboto-fontface": "*",
+    "vitest": "^0.33.0",
     "vue": "^3.2.0",
     "vue-router": "^4.0.0",
     "vuetify": "^3.0.0",

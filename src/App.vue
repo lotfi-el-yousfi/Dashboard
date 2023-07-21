@@ -1,13 +1,17 @@
 <template>
   <v-app>
-    <Toolbar></Toolbar>
-    <Drawer></Drawer>
-    <MainArea></MainArea>
+    <AppBar />
+    <Drawer />
   </v-app>
 </template>
 
-<script setup lang="ts">
-import Drawer from "@/views/Drawer.vue";
-import MainArea from "@/views/MainArea.vue";
-import Toolbar from "@/views/Toolbar.vue";
+<script lang="ts">
+import AppBar from "./views/Appbar.vue";
+import Drawer from "./views/Drawer.vue";
+export default {
+  components: {
+    AppBar,
+    Drawer,
+  },
+};
 </script>
